@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS base
 
 RUN apk add git &&\
-    git clone https://github.com/HaveIBeenPwned/PwnedPasswordsDownloader.git
+    git clone https://github.com/eduardo010174/PwnedPasswordsDownloader.git
 
 WORKDIR /PwnedPasswordsDownloader/src
 RUN dotnet restore HaveIBeenPwned.PwnedPasswords.Downloader/HaveIBeenPwned.PwnedPasswords.Downloader.csproj \
