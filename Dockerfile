@@ -22,4 +22,4 @@ RUN dotnet publish HaveIBeenPwned.PwnedPasswords.Downloader/HaveIBeenPwned.Pwned
 FROM mcr.microsoft.com/dotnet/runtime-deps:8.0-alpine AS runner
 WORKDIR /app
 COPY --from=base /PwnedPasswordsDownloader/src/out ./
-ENV PATH "$PATH:/app"
+ENV PATH="$PATH:/app"
